@@ -4,3 +4,196 @@
 % Website: https://github.com/nerosiar/resume
 % License : MIT
 %------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://nrais.me/}{\Large Nader RAIS (Security Engineering Student)}} & Email : \href{mailto:nader.hajboubakerrais@esprit.tn}{nader.hajboubakerrais@esprit.tn}\\
+  \href{http://nrais.me/}{http://www.nrais.me} & Mobile : +216-21585236 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {ESPRIT Hight Private School of Engeneering and Technologies}{Ariana, Tunisia}
+      {Bachelor of Engineering in Computer Science (field of network infrastructure and data security)}{Sep. 2018 -- Jun. 2021}
+    \resumeSubheading
+      {Sfax Preparatory School}{Sfax, Tunisia}
+      {Preparatory Degree Mathematics and Physics}{Sept. 2015 -- July. 2018}
+    \resumeSubheading
+      {Djerba Lycée Technique}{Djerba, Tunisia}
+      {Bachelor of Maths}{June. 2015 }
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Freelance ; SelfEmployed}{Tunis, Tunisia}
+      {Software Engineer}      {Jan 2018 - Oct 2020}
+      \resumeItemListStart
+        \resumeItem{Netflow Filtration }
+          {Network packet recommender systems using collaborative filtering on ntopng datasets using Tensorflow, python ASGI uvicorn, FastAPI, Mysql SQLAlchemy and Angular.}
+        \resumeItem{Service Management }
+          {Managing sailsjs microservices on AWS instances using Load Balancer and Cluster automation such as delivery time optimization, tracking, queuing and A/B testing.}
+        \resumeItem{Bulk Order}
+          {Bulk data processing and injection service from Hadoop to Cassandra and provides a REST layer .}
+        \resumeItem{Workflows}
+          {Built an internal app to run threat intelligence hunting by Servers monitoring for streaming data-parallel processing pipelines.Also creating a strategy backtesting engine used for simulating threats.}
+        \resumeItem{System Tracking and Data Collection}
+          {Designed the survey sourcing platform for an exportation Company which allowed for creating various tasks for exportations embedding surveys.}
+        \resumeItem{Warehousing}
+          {Setup, schema design and management of Amazon Redshift. Built an internal app for access to the data using a web interface. Dataduct integration for daily ETL(Extract, transform, load) injection into Redshift.}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {IOWAVES}{Monplaisir Ariana , Tunisia}
+      {Junior Developer}{Jul.2019 -- Sept.2019}
+      \resumeItemListStart
+        \resumeItem{iovision}
+          {Developed Monitoring dashboards and data surveying tools, which helped Energy  Engineers run their calculations better by providing data in real-time (NodeJS, socketio, Angular , Mongodb).}
+        \resumeItem{IoTrant}
+          {Created an IoT based network with Xbees and raspberry PI 3B for collecting data from electrical machines using zigbee transfert protocol and MQTT.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Consommi Tounsi}
+      {Ecommerce platform for Tunisian products, To enhance the financial envirenment. JEE, Wildfly.}
+    \resumeSubItem{educloud SOC Visualization}
+      {Data Visualization of educloud network Logs data using D3 and MongoDB.}
+    \resumeSubItem{MyGym}
+      {Development of a Desktop application for a Gym hall with C and Glade.}
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Prog Languages}{: Python, Scala, Javascript, JAVA, Rust, C}
+     \hfill
+     \textbf{Technologies}{: Nodejs, VueJS, JEE/spring}
+    }
+    \item{
+     \textbf{Cloud}{: AWS, Openstack, Docker, kubernetes, Jenkins, Ansible, Kafka}
+     \hfill
+     \textbf{Monitoring}{: Splunk, ELK, Zabbix}
+    }
+    \item{ 
+     \textbf{Security}{: Metasploit, Forensics, Pwn, Snort, IDS/IPS, Firewalling}
+     \hfill
+     \textbf{Versioning}{: Git, Bitbucket}
+   }
+   \item{
+     \textbf{Experience In Linux commands and Scripts}{ daily user }
+     \textbf{Virtual Envirenment}{: KVM, VMware, Vbox}
+    }
+ \resumeSubHeadingListEnd
+
+%-----------Languages-----------------
+\section{Languages}
+  \resumeSubHeadingListStart
+    \item{
+     \textbf{English}{: B2 professional level, read write and spoken}
+     \hfill
+     \textbf{Frensh}{: B2 professional level, Fluent}
+    }
+    \item{
+     \textbf{Arabic}{: Native Language}
+     \hfill
+     \textbf{Spanish}{: Medium Level read and spoken}
+    }
+  \resumeSubHeadingListEnd
+  
+%-----------Hibbies & SoftSkills-----------------
+\section{SoftSkills And Hobbies}
+  \resumeSubHeadingListStart
+\item{
+     \textbf{Chess Playing}{: Organize and play chess tournaments}
+     \hfill
+     \textbf{codingamer}{: day to day player at codingame.com}
+    }
+    \item{
+     \textbf{Camping}{: Head of a camping group}
+     \textbf{Golf}{: Member of Djerba Regional Team}
+     \textbf{CTF player}{: Staff on vulnhub}
+    }
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
