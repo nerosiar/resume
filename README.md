@@ -1,3 +1,12 @@
+# Latex Resume
+
+
+  [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/eclipse-theia/theia)
+  [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-curved)](https://github.com/nerosiar/resume/labels/help%20wanted)
+  [![License](https://img.shields.io/github/license/nerosiar/resume)]
+  [![Open questions](https://img.shields.io/badge/Open-questions-blue.svg?style=flat-curved)](https://github.com/nerosiar/resume/labels/question)
+  [![Open bugs](https://img.shields.io/badge/Open-bugs-red.svg?style=flat-curved)](https://github.com/nerosiar/resume/labels/bug)
+
 A single-page, one-column resume for [Nader Rais](https://github.com/nerosiar). It uses the base latex templates and fonts to provide ease of use and installation when trying to update the resume. The different sections are clearly documented and custom commands are used to provide consistent formatting. The three main sections in the resume are education, experience, and projects.
 
 ### Motivation
